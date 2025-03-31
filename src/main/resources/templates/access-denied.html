@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+<meta charset="UTF-8">
+<title>Home page for Spring Security Demo</title>
+</head>
+<body>
+<p align="right">
+    <h3> Access Denied! Unauthorized Access Restricted</h3>
+    
+    <a th:href="@{/}"> back to home page</a>
+	<br> <br>
+	
+	<form action="#" th:action="@{/logout}" method="POST">
+	
+		<button type="submit" >logout </button>
+	</form>
+</body>
+</html>
